@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { TimelineLite} from 'gsap';
 import Reseaux from './components/Reseaux';
+import Scroll from './components/Scroll';
 
 
 class App extends React.Component{
@@ -12,13 +13,22 @@ class App extends React.Component{
     this.state = {
       textOne : 'CREATIVE',
       textTwo : 'DEVELOPER',
-      color : ''
-    }
-    
+      color : '',
+      x : 0,
+      y : 0,
+      scale : 0
 
+    }
   }
+  cursorMove = (e) =>{
+    this.setState({x : e.pageX, y : e.pageY})
+  }
+
   mouseOver = () => {
     this.setState({color : 'black'})
+  }
+  overText = () => {
+    this.setState({scale : 3})
   }
   mouseOut = () =>{
     this.setState({color : ''})
@@ -68,8 +78,14 @@ class App extends React.Component{
     )
   }
   render(){
+    var style = {
+      top : this.state.y,
+      left : this.state.x,
+      scale : this.state.scale
+    }
     return(
-      <div>
+      <div className="containt" onMouseMove={this.cursorMove}>
+      <div className="cursor" style={style}></div>
         <section className="text">
           <ul className="network">
             <a href="#"><li>Behance</li></a>
@@ -77,7 +93,7 @@ class App extends React.Component{
             <a href="#"><li>Github</li></a>
           </ul>
           <div className="text-title">
-            <h1 className="title-name">MELVIN DEBOT <span className="text-block"></span></h1>
+            <h1 className="title-name" onMouseOver={this.overText}>MELVIN DEBOT <span className="text-block"></span></h1>
           </div>
           <div className="mail">MELVINDEBOT@GMAIL.COM</div>
           <div className="text-Bg">
@@ -223,7 +239,6 @@ class App extends React.Component{
             </div>
           </div>
         </section>
-        <section className="scroll"></section>
       </div>
     )
   }
