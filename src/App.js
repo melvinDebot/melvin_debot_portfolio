@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import { TimelineLite} from 'gsap';
-import Reseaux from './components/Reseaux';
-import Scroll from './components/Scroll';
+
 
 
 class App extends React.Component{
@@ -32,6 +31,28 @@ class App extends React.Component{
   }
   mouseOut = () =>{
     this.setState({color : ''})
+  }
+  createDivRight = () =>{
+    let parent = [];
+    for(let i = 0; i < 1; i++){
+      let children = [];
+      for(let j = 0; j < 5; j++){
+        children.push(<div className="Bg-one">{this.state.textTwo}</div>)
+      }
+      parent.push(<div className="text-wrapper right">{children}</div>)
+    }
+    return parent
+  }
+  createDivLeft = () =>{
+    let parent = [];
+    for(let i = 0; i < 1; i++){
+      let children = [];
+      for(let j = 0; j < 5; j++){
+        children.push(<div className="Bg-one">{this.state.textTwo}</div>)
+      }
+      parent.push(<div className="text-wrapper left">{children}</div>)
+    }
+    return parent
   }
   componentDidMount(){
     setInterval(() => {
@@ -88,7 +109,7 @@ class App extends React.Component{
       <div className="cursor" style={style}></div>
         <section className="text">
           <ul className="network">
-            <a href="#"><li>Behance</li></a>
+            <a href=""><li>Behance</li></a>
             <a href="#"><li>LinkeInd</li></a>
             <a href="#"><li>Github</li></a>
           </ul>
@@ -97,146 +118,13 @@ class App extends React.Component{
           </div>
           <div className="mail">MELVINDEBOT@GMAIL.COM</div>
           <div className="text-Bg">
-            <div className="text-wrapper right">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                >
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
-            <div className="text-wrapper left">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                >
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
-            <div className="text-wrapper right">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                >
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
-            <div className="text-wrapper left">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                >
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
-            <div className="text-wrapper right">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                style={{WebkitTextFillColor : this.state.color}}>
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
-            <div className="text-wrapper left">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                style={{WebkitTextFillColor : this.state.color}}>
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
-            <div className="text-wrapper right">
-              <div className="Bg-one" 
-                onMouseOver={this.mouseOver} 
-                onMouseOut={this.mouseOut} 
-                style={{WebkitTextFillColor : this.state.color}}>
-                  {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-              <div className="Bg-one">
-                {this.state.textTwo}
-              </div>
-              <div className="Bg-one">
-                {this.state.textOne}
-              </div>
-            </div>
+            {this.createDivRight()}
+            {this.createDivLeft()}
+            {this.createDivRight()}
+            {this.createDivLeft()}
+            {this.createDivRight()}
+            {this.createDivLeft()}
+            {this.createDivRight()}
           </div>
         </section>
       </div>

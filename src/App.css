@@ -76,7 +76,7 @@ a{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  opacity: 0.70;
+  opacity: 0.30;
   transform: rotate(-15deg)
 }
 .text-wrapper{
