@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
 import { TimelineLite} from 'gsap';
-
-
+import OthersSection from './components/OthersSection';
 
 class App extends React.Component{
   constructor(props){
@@ -19,6 +18,7 @@ class App extends React.Component{
 
     }
   }
+  //FONCTIONNALITES
   cursorMove = (e) =>{
     this.setState({x : e.pageX, y : e.pageY})
   }
@@ -32,6 +32,8 @@ class App extends React.Component{
   mouseOut = () =>{
     this.setState({color : ''})
   }
+
+  //CREATION DE DIV
   createDivRight = () =>{
     let parent = [];
     for(let i = 0; i < 1; i++){
@@ -54,6 +56,7 @@ class App extends React.Component{
     }
     return parent
   }
+
   componentDidMount(){
     setInterval(() => {
       this.move();
@@ -61,6 +64,8 @@ class App extends React.Component{
     this.moveText();
     
   }
+
+  //ANIMATION
   moveText = () =>{
     this.txt.to('.text-block', 1,
       {
@@ -109,9 +114,9 @@ class App extends React.Component{
       <div className="cursor" style={style}></div>
         <section className="text">
           <ul className="network">
-            <a href=""><li>Behance</li></a>
-            <a href="#"><li>LinkeInd</li></a>
-            <a href="#"><li>Github</li></a>
+            <a href="/" ><li>Behance</li></a>
+            <a href="/"><li>LinkeInd</li></a>
+            <a href="/"><li>Github</li></a>
           </ul>
           <div className="text-title">
             <h1 className="title-name" onMouseOver={this.overText}>MELVIN DEBOT <span className="text-block"></span></h1>
@@ -127,6 +132,7 @@ class App extends React.Component{
             {this.createDivRight()}
           </div>
         </section>
+        <OthersSection />
       </div>
     )
   }
