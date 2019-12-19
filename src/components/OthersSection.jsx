@@ -2,6 +2,9 @@ import React from 'react';
 import $ from "jquery";
 
 function OthersSection(){
+
+
+  // Animation Background
   $(window).scroll(function() {
   
     // selectors
@@ -38,9 +41,20 @@ function OthersSection(){
       </div>
       <div className="panel" data-color="blue">
         <h2>ABOUT</h2>
+        <div className="blue-containt">
+          <p>Dumque ibi diu moratur commeatus opperiens, quorum translationem ex Aquitania verni imbres solito crebriores prohibebant auctique torrentes, Herculanus advenit <br></br>protector domesticus, Hermogenis ex magistro equitum filius, apud Constantinopolim, ut supra rettulimus, populari quondam turbela discerpti. quo verissime referente quae Gallus egerat, damnis super praeteritis maerens et futurorum timore suspensus angorem animi quam diu potuit emendabat.</p>
+          <div className="blue-img"></div>
+        </div>
       </div>
       <div className="panel" data-color="orange">
         <h2>CONTACT</h2>
+        <div className="contact-text">
+          <p>Don’t be a stranger</p>
+          <p>just say hello.</p>
+          <p>melvin.debot@hetic.net</p>
+          <a href="/"><p>LinkeInd</p></a>
+          <a href="/"><p>LinkeInd</p></a>
+        </div>
       </div>
     </div>
   )

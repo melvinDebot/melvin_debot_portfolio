@@ -14,7 +14,8 @@ class App extends React.Component{
       color : '',
       x : 0,
       y : 0,
-      scale : 0
+      scale : 0,
+      couleur : ''
 
     }
   }
@@ -39,7 +40,7 @@ class App extends React.Component{
     for(let i = 0; i < 1; i++){
       let children = [];
       for(let j = 0; j < 5; j++){
-        children.push(<div className="Bg-one">{this.state.textTwo}</div>)
+        children.push(<div className="Bg-one">{this.state.textOne}</div>)
       }
       parent.push(<div className="text-wrapper right">{children}</div>)
     }
@@ -60,12 +61,22 @@ class App extends React.Component{
   componentDidMount(){
     setInterval(() => {
       this.move();
+      this.scrollBar();
     }, 1000)
     this.moveText();
     
   }
 
   //ANIMATION
+  scrollBar = () =>{
+    this.txt.fromTo('.scroll',1,{
+      top :0,
+      opacity:0
+    }, {
+      top:100,
+      opacity:1
+    })
+  }
   moveText = () =>{
     this.txt.to('.text-block', 1,
       {
@@ -103,6 +114,8 @@ class App extends React.Component{
       "-=18"
     )
   }
+  
+
   render(){
     var style = {
       top : this.state.y,
@@ -112,6 +125,9 @@ class App extends React.Component{
     return(
       <div className="containt" onMouseMove={this.cursorMove}>
       <div className="cursor" style={style}></div>
+      <div className="scroll-bar">
+        <div className="scroll"></div>
+      </div>
         <section className="text">
           <ul className="network">
             <a href="/" ><li>Behance</li></a>
@@ -120,8 +136,8 @@ class App extends React.Component{
           </ul>
           <div className="text-title">
             <h1 className="title-name" onMouseOver={this.overText}>MELVIN DEBOT <span className="text-block"></span></h1>
+            <h4>CREATIVE DEVELOPPER <span className="text-block"></span></h4>
           </div>
-          <div className="mail">MELVINDEBOT@GMAIL.COM</div>
           <div className="text-Bg">
             {this.createDivRight()}
             {this.createDivLeft()}
