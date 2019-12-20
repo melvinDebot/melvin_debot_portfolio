@@ -43,7 +43,8 @@ function OthersSection(){
       <div className="panel" data-color="blue">
         <h2>ABOUT</h2>
         <div className="blue-containt">
-          <p>Dumque ibi diu moratur commeatus opperiens, quorum translationem ex Aquitania verni imbres solito crebriores prohibebant auctique torrentes, Herculanus advenit <br></br>protector domesticus, Hermogenis ex magistro equitum filius, apud Constantinopolim, ut supra rettulimus, populari quondam turbela discerpti. quo verissime referente quae Gallus egerat, damnis super praeteritis maerens et futurorum timore suspensus angorem animi quam diu potuit emendabat.</p>
+          <p>Hey je suis étudinat en 2ème année de bachelor web à HETIC, je suis actuellement à la recherce d’une alternance en tant que développer front end Prêt à franchir le cap pour acquérir et développer mes compétences dans les métiers de l’internet. J’aspire à évoluer dans un contexte international et à avoir de nouvelles perspectives. <br></br>Prêt à franchir le cap pour acquérir et développer mes compétences dans les métiers de l’internet. J’aspire à évoluer dans un contexte international et à avoir de nouvelles perspectives.</p>
+
           <div className="blue-img">
             <Parallax />
           </div>
@@ -55,8 +56,8 @@ function OthersSection(){
           <p>Don’t be a stranger</p>
           <p>just say hello.</p>
           <p>melvin.debot@hetic.net</p>
-          <a href="/"><p>LinkeInd</p></a>
-          <a href="/"><p>LinkeInd</p></a>
+          <a href="https://www.linkedin.com/in/melvin-debot-b22078173/"><p>LinkeInd</p></a>
+          <a href="/"><p>Behance</p></a>
         </div>
       </div>
     </div>

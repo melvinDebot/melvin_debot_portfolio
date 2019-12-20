@@ -130,9 +130,9 @@ class App extends React.Component{
       </div>
         <section className="text">
           <ul className="network">
-            <a href="/" ><li>Behance</li></a>
-            <a href="/"><li>LinkeInd</li></a>
-            <a href="/"><li>Github</li></a>
+            <a href="/" ><li>Accueil</li></a>
+            <a href="/"><li>Project</li></a>
+            <a href="/"><li>Contact</li></a>
           </ul>
           <div className="text-title">
             <h1 className="title-name" onMouseOver={this.overText}>MELVIN DEBOT <span className="text-block"></span></h1>
