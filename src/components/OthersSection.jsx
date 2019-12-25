@@ -1,6 +1,7 @@
 import React from 'react';
 import $ from "jquery";
 import Parallax from './Parallax';
+import Project from './Project';
 
 function OthersSection(){
 
@@ -15,7 +16,7 @@ function OthersSection(){
     
     // Change 33% earlier than scroll position so colour is there when you arrive.
     var scroll = $window.scrollTop() + ($window.height() / 3);
-   
+
     $panel.each(function () {
       var $this = $(this);
       
@@ -28,7 +29,7 @@ function OthersSection(){
         $body.removeClass(function (index, css) {
           return (css.match (/(^|\s)color-\S+/g) || []).join(' ');
         });
-         
+
         // Add class of currently active div
         $body.addClass('color-' + $(this).data('color'));
       }
@@ -39,6 +40,7 @@ function OthersSection(){
     <div>
       <div className="panel" data-color="white">
         <h2>PROJECT</h2>
+        <Project />
       </div>
       <div className="panel" data-color="blue">
         <h2>ABOUT</h2>

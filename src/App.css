@@ -124,7 +124,6 @@ a{
 .wrapper-two{
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +132,6 @@ a{
 .wrapper-tree{
   width: 100%;
   height: 100vh;
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +162,9 @@ h3{
   align-items: center;
   transition: 1s;
   font-family: 'Montserrat', sans-serif;
-  
+}
+.panel:nth-child(1){
+  height: 300vh;
 }
 h2{
   font-size: 12rem;
@@ -224,8 +224,60 @@ h2{
   transition: 1s top;
 }
 
+/* PAGE PROJECT */
+
+.stateProject{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+}
+.bobo{
+  width: 40%;
+  height: 10%;
+  background: #2353B0;
+  position: relative;
+}
+.bobo h3{
+  font-size: 300%;
+  position: absolute;
+  left: -15px;
+  bottom: -30px;
+  margin: 0;
+}
+.bobo h4{
+  position: absolute;
+  left: -15px;
+  bottom: -50px;
+  margin: 0;
+}
+
+.bobo h4:hover{
+  color: red;
+}
 
 
+
+
+.box{
+  position: relative;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+}
+.overlay{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:#ececec;
+  width: 100%;
+  height: 100%;
+}
 
 
 
