@@ -19,7 +19,7 @@ class App extends React.Component{
 
     }
   }
-  //FONCTIONNALITES
+
   cursorMove = (e) =>{
     this.setState({x : e.pageX, y : e.pageY})
   }
@@ -34,7 +34,6 @@ class App extends React.Component{
     this.setState({color : ''})
   }
 
-  //CREATION DE DIV
   createDivRight = () =>{
     let parent = [];
     for(let i = 0; i < 1; i++){
@@ -67,7 +66,6 @@ class App extends React.Component{
     
   }
 
-  //ANIMATION
   scrollBar = () =>{
     this.txt.fromTo('.scroll',1,{
       top :0,

@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 class Project extends React.Component{
   constructor(props){
     super(props);
@@ -19,18 +18,14 @@ class Project extends React.Component{
 
   render(){
     return(
-      <div className="stateProject">
+        <div className="stateProject">
         <div className="bobo">
           <h3>Peugeot Cycle</h3>
-          <h4><a href="/">Voir</a></h4>
+          <h4><a href="https://peugeot-cycle.netlify.com">Voir</a></h4>
         </div>
         <div className="bobo">
           <h3>Peugeot Cycle</h3>
-          <h4><a href="/">Voir</a></h4>
-        </div>
-        <div className="bobo">
-          <h3>Peugeot Cycle</h3>
-          <h4><a href="/">Voir</a></h4>
+          <h4><a href="https://www.google.fr/">Voir</a></h4>
         </div>
         <div className="bobo">
           <h3>Peugeot Cycle</h3>
@@ -41,6 +36,8 @@ class Project extends React.Component{
           <h4><a href="/">Voir</a></h4>
         </div>
       </div>
+
+      
     )
   }
 }
