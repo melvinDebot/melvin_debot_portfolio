@@ -24,15 +24,15 @@ class Project extends React.Component{
           <h4><a href="https://peugeot-cycle.netlify.com">Voir</a></h4>
         </div>
         <div className="bobo">
-          <h3>Peugeot Cycle</h3>
+          <h3>Lost In Chatelet</h3>
           <h4><a href="https://www.google.fr/">Voir</a></h4>
         </div>
         <div className="bobo">
-          <h3>Peugeot Cycle</h3>
+          <h3>TOTO</h3>
           <h4><a href="/">Voir</a></h4>
         </div>
         <div className="bobo">
-          <h3>Peugeot Cycle</h3>
+          <h3>Old Portfolio</h3>
           <h4><a href="/">Voir</a></h4>
         </div>
       </div>

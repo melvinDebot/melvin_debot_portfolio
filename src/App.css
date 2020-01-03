@@ -238,8 +238,20 @@ h2{
 .bobo{
   width: 40%;
   height: 17%;
-  background: #2353B0;
+  background-image: url('assets/backgroundPeugeot.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.75;
   position: relative;
+}
+.bobo:nth-child(2){
+  background-image: url('assets/backgroundLostInChatelet.svg');
+}
+.bobo:nth-child(3){
+  background-image: url('assets/backgroundToto.svg');
+}
+.bobo:nth-child(4){
+  background-image: url('assets/backgroundOldPorfolio.svg');
 }
 .bobo h3{
   font-size: 300%;
@@ -298,6 +310,9 @@ img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+  .bobo{
+    width: 85%
   }
   .blue-img{
     width: 350px;
