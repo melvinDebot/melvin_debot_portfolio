@@ -194,6 +194,8 @@ h2{
 }
 .blue-containt p{
   width: 550px;
+  font-size: 1.2rem;
+  white-space: normal;
 }
 .blue-img{
   width: 400px;
@@ -233,6 +235,7 @@ h2{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  transition: transform 0.25 linear;
 
 }
 .bobo{
@@ -244,6 +247,8 @@ h2{
   opacity: 0.75;
   position: relative;
 }
+
+
 .bobo:nth-child(2){
   background-image: url('assets/backgroundLostInChatelet.svg');
 }
@@ -305,6 +310,14 @@ img{
   font-weight: 700;
 }
 @media(max-width: 700px){
+  .wrapper{
+    width: 200px;
+    height: 200px;
+  }
+  .child{
+    height: 160px;
+    top: 40px;
+  }
   .blue-containt{
     display: flex;
     flex-direction: column;

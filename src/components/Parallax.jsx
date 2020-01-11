@@ -23,7 +23,7 @@ export default class Parallax extends React.Component{
       <div>
         <div className="wrapper">
           <div className="parent">
-            <div className="child" style={{top : this.state.offset / 15}}></div>
+            <div className="child" style={{top : this.state.offset / 26}}></div>
           </div>
         </div>
       </div>

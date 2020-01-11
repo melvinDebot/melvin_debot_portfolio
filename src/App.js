@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import { TimelineLite} from 'gsap';
 import OthersSection from './components/OthersSection';
 
