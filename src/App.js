@@ -115,14 +115,10 @@ class App extends React.Component{
   
 
   render(){
-    var style = {
-      top : this.state.y,
-      left : this.state.x,
-      scale : this.state.scale
-    }
+    
     return(
       <div className="containt" onMouseMove={this.cursorMove}>
-      <div className="cursor" style={style}></div>
+      
       <div className="scroll-bar">
         <div className="scroll"></div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import Viewport from './viewport';
 import Fade from 'react-reveal/Fade';
 
 class Project extends React.Component{
@@ -21,36 +22,42 @@ class Project extends React.Component{
   render(){
     return(
         <div className="stateProject">
-        <Fade bottom>
           <div className="bobo">
             <h3>Peugeot Cycle</h3>
             <h4><a href="https://peugeot-cycle.netlify.com">Voir</a></h4>
           </div>
-        </Fade>
-        <Fade bottom>
           <div className="bobo">
             <h3>Lost In Chatelet</h3>
             <h4><a href="https://lost-in-chatelet.netlify.com">Voir</a></h4>
           </div>
-        </Fade>
-        <Fade bottom>
           <div className="bobo">
             <h3>TOTO</h3>
             <h4><a href="https://toto-project.netlify.com">Voir</a></h4>
           </div>
-        </Fade>
-        <Fade bottom>
           <div className="bobo">
             <h3>Old Portfolio</h3>
             <h4><a href="https://oldporfolio-melvin-debot.netlify.com">Voir</a></h4>
           </div>
-        </Fade>
-        
       </div>
 
       
     )
   }
 }
+
+
+setTimeout(() => {
+
+ document.querySelectorAll('.bobo').forEach( div => {
+   div = new Viewport(div, 'bottom')
+   div.detectViewport((colision)=>{
+     if (colision) {
+      div.element.classList.add('reavel')
+     } else {
+      div.element.classList.remove('reavel')
+     }
+   })
+ });
+}, 1000);
 
 export default Project;
