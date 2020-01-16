@@ -124,7 +124,7 @@ class App extends React.Component{
       </div>
         <section className="text">
           <ul className="network">
-            <a href="/" ><li>Accueil</li></a>
+            <a href="/" ><li>Accuel</li></a>
             <a href="/"><li>Project</li></a>
             <a href="/"><li>Contact</li></a>
           </ul>
