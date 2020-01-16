@@ -12,6 +12,7 @@ class Project extends React.Component{
   }
   componentDidMount(){
     window.addEventListener('scroll', this.handleScroll())
+    console.log("yoo")
   }
   handleScroll = () =>{
     if(window.screenY === 500){
