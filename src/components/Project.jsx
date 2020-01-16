@@ -1,6 +1,5 @@
 import React from 'react';
 import Viewport from './viewport';
-import Fade from 'react-reveal/Fade';
 
 class Project extends React.Component{
   constructor(props){
