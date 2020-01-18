@@ -29,7 +29,7 @@ function OthersSection(){
       <div className="panel" data-color="blue">
         <h2>ABOUT</h2>
         <div className="blue-containt">
-          <p>Hey je suis étudinat en 2ème année de bachelor web à HETIC, je suis actuellement à la recherce d’une alternance en tant que développer front end Prêt à franchir le cap pour acquérir et développer mes compétences dans les métiers de l’internet. J’aspire à évoluer dans un contexte international et à avoir de nouvelles perspectives. <br></br>Prêt à franchir le cap pour acquérir et développer mes compétences dans les métiers de l’internet. J’aspire à évoluer dans un contexte international et à avoir de nouvelles perspectives.</p>
+          <p>Hey je suis étudinat en 2ème année de bachelor web à HETIC, je suis actuellement à la recherce d’une alternance en tant que développer front end Prêt à franchir le cap pour acquérir et développer mes compétences dans les métiers de l’internet.<br/> J’aspire à évoluer dans un contexte international et à avoir de nouvelles perspectives. <br></br>Prêt à franchir le cap pour acquérir et développer mes compétences dans les métiers de l’internet. J’aspire à évoluer dans un contexte international et à avoir de nouvelles perspectives.</p>
 
           <div className="blue-img">
             <Parallax />

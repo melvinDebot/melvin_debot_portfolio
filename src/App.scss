@@ -250,7 +250,7 @@ h2{
   background-repeat: no-repeat;
   opacity: 0;
   position: relative;
-  transition: 3s;
+  transition: 2s;
   transform: translateX(1000px);
 
   &::before{
@@ -341,7 +341,7 @@ img{
     height: 200px;
   }
   .child{
-    height: 160px;
+    height: 190px;
     top: 40px;
   }
   .blue-containt{
@@ -349,6 +349,7 @@ img{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    text-align: justify;
   }
   .bobo{
     width: 85%
